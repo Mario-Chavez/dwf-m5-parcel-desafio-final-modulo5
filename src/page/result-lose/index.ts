@@ -5,7 +5,7 @@ export function initResultLose(params) {
   div.innerHTML = `
        
   <div class="rersultado-page__titulo-conteiner">
-          <text-el variant="title"><h1>Perdiste perrin</h1></text-el>
+          <text-el variant="title"><h1>Perdiste</h1></text-el>
       </div>
       <text-el variant="">Vos : ${result.player}</text-el>
       <text-el variant="">La maquina: ${result.computer}</text-el>

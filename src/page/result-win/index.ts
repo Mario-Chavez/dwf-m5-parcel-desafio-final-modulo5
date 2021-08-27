@@ -5,7 +5,7 @@ export function initResultWin(params) {
   const div = document.createElement("div");
   div.innerHTML = `
         <div class="reultado-page__titulo-conteiner">
-  <text-el variant="title"><h1>Ganaste perrin</h1></text-el>
+  <text-el variant="title"><h1>Ganaste</h1></text-el>
 </div>
   <text-el variant="">vos : ${result.player}</text-el>
   <text-el variant="">la maquina: ${result.computer}</text-el>

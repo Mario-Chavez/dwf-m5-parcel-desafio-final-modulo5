@@ -13,7 +13,7 @@ export function initPlayGame(params) {
         </div>
     `;
 
-  // timesUp() modifica la div principal cuando termina el contador y el/la jugador/a no hizo ninguna jugada
+  // timesUp modifica la div principal cuando termina el contador
   function timesUp() {
     div.innerHTML = `
                <text-el variant="title"><h1>Pasó el tiempo </h1></text-el>
@@ -52,7 +52,7 @@ export function initPlayGame(params) {
           <my-play type="${myPlay}"></my-play>
       </div>
       `;
-    // redireccionamos la pagina despendiendo la eleccion
+    //dependiendo la eleccion redireccionamos las pages
     const winner = state.whoWins(myPlay, computerPlay);
     const intervalUntilResult = setInterval(() => {
       if (winner == "empate") {
@@ -126,12 +126,12 @@ export function initPlayGame(params) {
     });
   }
 
-  // Agrego + 1 al contador porque quiero que termine en "0" la cuenta regresiva, sino termina en 1
+  // Agrego + 1 asi termina en 1
   let intervalCounter = countDown + 1;
   let playerPlayEl: any = div.querySelector(".selected") || "none";
 
   /* 
-     crea un nuevo cuenta regresiva despendienso si el jugador eligio o no realiza diferentes acciones
+     crea un nuevo cuenta regresiva despendienso si el jugador eligio o no, y realiza diferentes acciones
     */
   const countDownInterval = setInterval(() => {
     intervalCounter--;
