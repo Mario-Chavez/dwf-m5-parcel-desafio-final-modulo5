@@ -1,0 +1,69 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+  background-image: url("./img/fondo.png");
+  align-items: center;
+  justify-content: center;
+}
+
+/* welcome */
+.welcome__main-div-container {
+  align-items: center;
+  margin: 0 auto;
+  max-width: 90vh;
+  height: 100%;
+  justify-content: center;
+}
+.welcome-page__titulo-conteiner {
+  margin-top: 3vh;
+  margin-bottom: 7vh;
+}
+.welcome-page__plays-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 70vh;
+  margin: 12vh auto 50vh;
+}
+
+.welcome__play {
+  text-align: center;
+}
+
+/* instructions */
+.instructions__main-div-container {
+  align-items: center;
+  margin: 0 auto;
+  max-width: 90vh;
+  height: 100%;
+  justify-content: center;
+}
+.instructions__titulo-conteiner {
+  margin-top: 3vh;
+  margin-bottom: 7vh;
+}
+.instructions__button-container {
+  margin: 8vh auto 15vh;
+}
+.instructions__plays-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr;
+  max-width: 70vh;
+}
+/*  /play */
+.game__show-both-plays-container.game__fade-in-down {
+  text-align: center;
+  margin-top: 5vh;
+}
+.game__show-both-plays-container.game__fade-in-up {
+  text-align: center;
+  margin-top: 30vh;
+}
